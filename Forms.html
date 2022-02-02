@@ -1,0 +1,64 @@
+Aim:	Make a Form to fill details
+
+Code:
+<html>
+<body>
+<h2>HTML Forms</h2>
+<form>
+  First name: <input type="text" ><br><br>
+  Last name: <input type="text"><br><br>
+  Email: <input type="text"><br><br>
+  Enter a phone number: <input type="tel"><br><br>
+  
+  DOB:<input type="date" >
+
+  <p><strong>Choose Gender</strong></p>
+  <input type="radio" name="gender"> Female<br>
+  <input type="radio" name="gender"> Male<br>
+  <input type="radio" name="gender"> Others
+
+  <p><strong>Languages</strong></p>
+  <input type="checkbox"> Python <br>
+  <input type="checkbox"> Java<br>
+  <input type="checkbox"> C<br>
+  <input type="checkbox"> C++<br>
+  <input type="checkbox"> HTML<br>
+  <input type="checkbox"> PHP<br>
+  <input type="checkbox"> Ruby<br>
+  <input type="checkbox"> GO<br>
+
+ <p><strong>Choose:</strong></p>
+  <select>
+    <option>Student</option>
+    <option>Fresher</option>
+    <option>Teacher</option>
+    <option></option>
+  </select><br>
+
+ <p><strong>About your self:</strong></p>
+  <textarea name="message" rows="10" cols="30"></textarea>
+  <br>
+
+ <p><strong>Select Branch</strong></p>
+  <input list="branches">
+  <datalist id="branches">
+    <option value="IT">
+    <option value="CSE">
+    <option value="ECE">
+    <option value="EEE">
+    <option value="CE">
+  </datalist>
+
+ Select a file:<input type="file" id="myfile" name="myfile"><br><br>
+
+
+<form action="/action_page.php">
+  <label for="datemin">Enter a date after 2000-01-01:</label>
+  <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+
+  <label for="datemax">Enter a date before 1980-01-01:</label>
+  <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>
